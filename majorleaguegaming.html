@@ -1,0 +1,32 @@
+<html>
+	<head>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	</head>
+
+		
+<body>
+	
+	<center><h1>Major League Gaming</h1></center>
+
+	<center><img src="MLGlogo.jpg"></center>
+
+	<center><body background="beastmode.jpg"</center>
+
+	<div>
+		<input type="text" placeholder="Event Look Up" id="whattype">
+		<input type="button" onclick="addToList();" name="submit" value="submit">
+	</div>
+
+	
+
+	<script>
+		function addToList() {
+			var newitem = $("#whattype") .val();
+			if(newitem){
+				$("#typeList").append("<li class='craveizzlestyle'>" + newitem + "</li>");
+			}
+		}
+	</script>
+
+</html>
+</body>

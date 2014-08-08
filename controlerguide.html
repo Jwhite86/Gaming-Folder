@@ -1,0 +1,49 @@
+<html>
+
+<head>Control Guide
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(document).ajaxError(function(){
+    alert("An error occured!");
+  });
+  $("button").click(function(){
+    $("div").load("wrongfile.txt");
+  });
+});
+</script>
+
+
+</head>
+
+<body>
+
+	<form>
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form> 
+
+
+
+		<form action="">
+GamerTag: <input type="text" name="user"><br>
+I have a PS4:
+<input type="checkbox" name="Console" value="PS4"><br>
+I have a XboxOne:
+<input type="checkbox" name="Console" value="XboxOne" checked="checked"><br>
+I have an PC:
+<input type="checkbox" name="Console" value="PC"><br>
+</form>
+
+	<textarea rows="4" cols="50">
+
+	</textarea>
+
+
+	<button type="button" onclick="alert('Thank You For Your Submit!')">Submit</button>
+
+
+
+</body>
+</html>
